@@ -11,3 +11,31 @@
 상단 메뉴바에는 홈 링크, 환영 메시지, 업로드 링크, 로그인(로그아웃), 회원가입 링크를 출력합니다.
 메인 페이지는 사진목록을 출력하며 댓글 시스템도 사용하겠습니다.
 뷰단위로 기능을 살펴 보자
+
+
+### 댓글기능 구현하기
+
+##### DISQUS 가입하기
+
+https://disqus.com
+
+$pip install django-disqus
+
+<settings.py 에 등록>
+
+'disqus',
+
+'django.contrib.sites'
+
+
+$python manage.py migrate   => sites 앱을 위한 데이터베이스를 설정
+
+<settings.py 에 추가>
+
+DISQUS_WEBSITE_SHORTNAME = 'dstagram-django'
+
+SITE_ID =1
+
+
+
+url : 127.0.0.1:8000/detail/1/
