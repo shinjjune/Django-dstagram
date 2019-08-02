@@ -37,5 +37,10 @@ DISQUS_WEBSITE_SHORTNAME = 'dstagram-django'
 SITE_ID =1
 
 
-
 url : 127.0.0.1:8000/detail/1/
+
+### cf) 권한 제한하기
+---> 데코레이터(decorator)와 믹스인(mixin)
+
+
+
